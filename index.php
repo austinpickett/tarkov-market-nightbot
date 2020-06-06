@@ -1,6 +1,5 @@
 <?php
-DEFINE('API_KEY', '...');
-
+echo getenv('API_KEY');
 $query = htmlspecialchars($_GET['q']);
 
 if (empty($query)) {
@@ -16,7 +15,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  'x-api-key:'.API_KEY,
+  'x-api-key:'.getenv('API_KEY'),
 ));
 
 curl_setopt($ch, CURLOPT_URL,$url);

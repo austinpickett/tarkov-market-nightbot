@@ -1,0 +1,12 @@
+{
+    "name": "austin/tarkov-market-nightbot",
+    "description": "PHP curl script to use tarkov-market on nightbot",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Austin Pickett",
+            "email": "pickett.austin@gmail.com"
+        }
+    ],
+    "require": {}
+}
