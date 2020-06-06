@@ -11,11 +11,11 @@ This is a PHP wrapper to the Tarkov API: https://tarkov-market.com/
 - run `git push heroku master`
 - run `heroku open`
 - Add the URL to nightbot as such:
--- Commands > Custom 
--- Command: whichever you want (we prefer !market or !m)
--- Message: `$(urlfetch HEROKU_DEPLOY_URL?q=$(query))`
+  * Commands > Custom 
+  * Command: whichever you want (we prefer !market or !m)
+  * Message: `$(urlfetch HEROKU_DEPLOY_URL?q=$(query))`
 
-reqs:
+requirements:
 - heroku account
 - PHP knowledge
 - access to tarkov market api
