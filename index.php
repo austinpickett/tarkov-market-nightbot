@@ -1,5 +1,4 @@
 <?php
-echo getenv('API_KEY');
 $query = htmlspecialchars($_GET['q']);
 
 if (empty($query)) {
@@ -9,9 +8,7 @@ if (empty($query)) {
 
 $url = 'https://tarkov-market.com/api/v1/item?q='. $query;
 
-//  Initiate curl
 $ch = curl_init();
-// Will return the response, if false it print the response
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
