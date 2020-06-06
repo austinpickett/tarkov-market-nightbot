@@ -1,5 +1,6 @@
 <?php
-$query = htmlspecialchars($_GET['q']);
+$query = $_GET['q'];
+$query = str_replace($query, ' ', '+');
 
 if (empty($query)) {
   echo 'To use market bot type !m <short_name>. No spaces allowed.';
