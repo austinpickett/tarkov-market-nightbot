@@ -7,7 +7,7 @@ This is a PHP wrapper to the Tarkov API: https://tarkov-market.com/
 - run `git clone https://github.com/austinpickett/tarkov-market-nightbot`
 - run `cd tarkov-market-bot`
 - run `heroku create`
-- run `heroku config:set API_KEY=TARKOV_MARKET_API_KEY
+- run `heroku config:set API_KEY=TARKOV_MARKET_API_KEY`
 - run `git push heroku master`
 - run `heroku open`
 - Add the URL to nightbot as such:
