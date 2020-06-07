@@ -25,4 +25,4 @@ if (empty($result['name'])) {
   die;
 }
 
-echo $result['name']. ": "  .number_format((int)$result['price']);
+echo $result['name']. ": "  .number_format((int)$result['price']).$result['tradingPriceCur'];
